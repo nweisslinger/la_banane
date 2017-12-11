@@ -9650,8 +9650,8 @@ p {
   max-width: 10rem;
 }
 
-#pv, #clients {
-  background-color: #fff8e0;
+#section-pv, #section-clients {
+  background-color: #fff9e6;
 }
 
 .button .button .navbar-burger {
