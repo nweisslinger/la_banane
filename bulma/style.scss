@@ -1,0 +1,70 @@
+// 1. Import the initial variables
+@import "sass/utilities/initial-variables";
+@import "sass/utilities/functions";
+
+$labananecolor-1: #FFCD00;
+$labananecolor-2: rgb(0, 225, 255);
+// Add a serif family
+
+$navbar-height: 5rem;
+
+// 3. Set the derived variables
+// Use the new pink as the primary color
+$primary: $labananecolor-1;
+$primary-invert: findColorInvert($primary);
+// Use the existing orange as the danger color
+
+$family-primary: "Josefin sans";
+$family-secondary:"Lato";
+
+$navbar-item-hover-color: $labananecolor-1;
+$navbar-item-hover-background-color: white;
+
+$button-color: rgb(255, 255, 255);
+$button-background-color: $labananecolor-2;
+$button-border-color: none;
+
+$body-background-color:rgb(255, 255, 255);
+
+// 6. Import the rest of Bulma
+@import "bulma";
+
+
+#hero-title h1, #hero-title h2{
+    color: white;
+    // text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+#languages a{
+    opacity: 0.5;
+}
+
+.navbar-item img{
+    max-height: 100%;
+}
+
+.sectionImage{
+    max-height: 20rem;
+    overflow: hidden;
+}
+
+p{
+    font-family: "Lato";
+}
+
+.carousel img{
+    margin:auto;
+    max-height: 50vh;
+}
+
+.sponsors img{
+max-width:10rem;
+}
+
+#pv, #clients{
+    background-color: rgb(255, 248, 224);
+}
+
+.button .button .navbar-burger{
+    background-color: white;
+}
