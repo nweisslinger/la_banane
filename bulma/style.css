@@ -1266,9 +1266,9 @@ a.box:active {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #00e1ff;
+  background-color: white;
   border-color: none;
-  color: white;
+  color: black;
   cursor: pointer;
   justify-content: center;
   padding-left: 0.75em;
@@ -9620,6 +9620,11 @@ label.panel-block:hover {
   padding: 3rem 1.5rem 6rem;
 }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 #hero-title h1, #hero-title h2 {
   color: white;
 }
@@ -9638,7 +9643,7 @@ label.panel-block:hover {
 }
 
 p {
-  font-family: "Lato";
+  font-family: "Work sans";
 }
 
 .carousel img {
@@ -9654,8 +9659,26 @@ p {
   background-color: #fff9e6;
 }
 
-.button .button .navbar-burger {
-  background-color: white;
+.navbar-burger span {
+  background-color: black;
+}
+
+@media only screen and (max-width: 1023px) {
+  #section-hero {
+    display: none;
+  }
+}
+
+#cta {
+  color: white;
+  background-color: #00e1ff;
+}
+
+.bbg {
+  background-image: url("../assets/images/bbg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
  
 

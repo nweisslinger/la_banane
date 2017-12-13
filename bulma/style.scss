@@ -4,24 +4,23 @@
 
 $labananecolor-1: #FFCD00;
 $labananecolor-2: rgb(0, 225, 255);
-// Add a serif family
+
 
 $navbar-height: 5rem;
 
-// 3. Set the derived variables
-// Use the new pink as the primary color
+
 $primary: $labananecolor-1;
 $primary-invert: findColorInvert($primary);
-// Use the existing orange as the danger color
+
 
 $family-primary: "Josefin sans";
-$family-secondary:"Lato";
+$family-secondary:"Work sans";
 
 $navbar-item-hover-color: $labananecolor-1;
 $navbar-item-hover-background-color: white;
 
-$button-color: rgb(255, 255, 255);
-$button-background-color: $labananecolor-2;
+$button-color: black;
+$button-background-color: white;
 $button-border-color: none;
 
 $body-background-color:rgb(255, 255, 255);
@@ -31,6 +30,10 @@ $footer-background-color:$labananecolor-1;
 // 6. Import the rest of Bulma
 @import "bulma";
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 #hero-title h1, #hero-title h2{
     color: white;
@@ -51,7 +54,7 @@ $footer-background-color:$labananecolor-1;
 }
 
 p{
-    font-family: "Lato";
+    font-family: "Work sans";
 }
 
 .carousel img{
@@ -67,6 +70,25 @@ max-width:10rem;
     background-color: rgb(255, 249, 230);
 }
 
-.button .button .navbar-burger{
-    background-color: white;
+.navbar-burger span{
+    background-color: black;
+}
+
+@media only screen and (max-width: 1023px){
+    #section-hero{
+        display:none;
+    }
+}
+
+#cta{
+    color: white;
+    background-color: $labananecolor-2;
+}
+
+.bbg{
+    background-image: url("../assets/images/bbg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
 }
