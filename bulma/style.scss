@@ -3,7 +3,7 @@
 @import "sass/utilities/functions";
 
 $labananecolor-1: #FFCD00;
-$labananecolor-2: rgb(0, 225, 255);
+$labananecolor-2: #0DF4FF;
 
 
 $navbar-height: 5rem;
@@ -22,6 +22,11 @@ $navbar-item-hover-background-color: white;
 $button-color: black;
 $button-background-color: white;
 $button-border-color: none;
+
+$title-color: black;
+$subtitle-color: black;
+
+$link: $labananecolor-2;
 
 $body-background-color:rgb(255, 255, 255);
 
@@ -55,6 +60,7 @@ html, body {
 
 p{
     font-family: "Work sans";
+    color:black;
 }
 
 .carousel img{
@@ -66,8 +72,12 @@ p{
 max-width:10rem;
 }
 
-#section-pv, #section-clients{
-    background-color: rgb(255, 249, 230);
+.colored-section{
+    background-color: rgba(0, 225, 255, 0.644);
+}
+
+.colored-section h2, .colored-section p, .colored-section h3{
+    color:white;
 }
 
 .navbar-burger span{
@@ -82,7 +92,7 @@ max-width:10rem;
 
 #cta{
     color: white;
-    background-color: $labananecolor-2;
+    background-color: $labananecolor-1;
 }
 
 .bbg{
@@ -92,3 +102,11 @@ max-width:10rem;
     background-position: center;
 
 }
+
+footer.footer{
+    color:black;
+}
+// .parallax-mirror .parallax-slider{
+//     background-blend-mode: multiply;
+//     mix-blend-mode: multiply;
+// }
