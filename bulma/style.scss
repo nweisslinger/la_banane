@@ -18,6 +18,7 @@ $family-secondary:"Work sans";
 
 $navbar-item-hover-color: $labananecolor-1;
 $navbar-item-hover-background-color: white;
+$navbar-item-color: black;
 
 $button-color: black;
 $button-background-color: white;
@@ -72,9 +73,6 @@ p{
 max-width:10rem;
 }
 
-.colored-section{
-    background-color: rgba(0, 225, 255, 0.644);
-}
 
 .colored-section h2, .colored-section p, .colored-section h3{
     color:white;
@@ -88,25 +86,34 @@ max-width:10rem;
     #section-hero{
         display:none;
     }
+    // div.parallax-mirror>div.parallax-slider{
+    //     visibility: hidden;
+
+    //     }
 }
 
 #cta{
     color: white;
-    background-color: $labananecolor-1;
+    background-color: $labananecolor-2;
+}
+.colored-section #cta{
+    color: black;
+    background-color: white;
 }
 
+#section-hero #cta{
+    color: white;
+    background-color: $labananecolor-1;
+}
 .bbg{
     background-image: url("../assets/images/bbg.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    mix-blend-mode: hue;
 
 }
 
 footer.footer{
-    color:black;
+    color:white;
 }
-// .parallax-mirror .parallax-slider{
-//     background-blend-mode: multiply;
-//     mix-blend-mode: multiply;
-// }

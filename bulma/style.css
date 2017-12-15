@@ -6589,7 +6589,7 @@ html.has-navbar-fixed-bottom {
 
 .navbar-item,
 .navbar-link {
-  color: #4a4a4a;
+  color: black;
   display: block;
   line-height: 1.5;
   padding: 0.5rem 1rem;
@@ -9656,10 +9656,6 @@ p {
   max-width: 10rem;
 }
 
-.colored-section {
-  background-color: rgba(0, 225, 255, 0.644);
-}
-
 .colored-section h2, .colored-section p, .colored-section h3 {
   color: white;
 }
@@ -9676,6 +9672,16 @@ p {
 
 #cta {
   color: white;
+  background-color: #0DF4FF;
+}
+
+.colored-section #cta {
+  color: black;
+  background-color: white;
+}
+
+#section-hero #cta {
+  color: white;
   background-color: #FFCD00;
 }
 
@@ -9684,10 +9690,11 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  mix-blend-mode: hue;
 }
 
 footer.footer {
-  color: black;
+  color: white;
 }
  
 

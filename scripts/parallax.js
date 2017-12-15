@@ -170,8 +170,23 @@
 
     refresh: function() {
       this.boxWidth        = this.$element.outerWidth();
-      this.boxHeight       = this.$element.outerHeight() + this.bleed * 2;
-      this.boxOffsetTop    = this.$element.offset().top - this.bleed;
+      // if (this.$element.is("#section-labanane"))
+      //   this.boxHeight = this.$element.outerHeight();
+      // else {
+      //   this.boxHeight = $('#section-labanane').outerHeight() + this.$element.outerHeight();
+      //   console.log(this.boxHeight);
+      //   console.log(this.$element);
+      // }
+
+      this.boxHeight = this.$element.offset().top + this.$element.outerHeight();
+      
+      // this.boxHeight       = this.$element.outerHeight() + this.bleed * 2;
+      // this.boxHeight       = 1000;
+      // this.boxOffsetTop    = 420;
+      // this.boxOffsetTop    = this.$element.offset().top - this.bleed;
+      // this.boxOffsetTop    = document.getElementById('section-labanane').offset().top - this.bleed;
+      // this.boxOffsetTop    = $('#section-labanane').offset().top;
+      this.boxOffsetTop    = 0;
       this.boxOffsetLeft   = this.$element.offset().left;
       this.boxOffsetBottom = this.boxOffsetTop + this.boxHeight;
 
@@ -215,6 +230,7 @@
         } else {
           this.offsetBaseTop = imageOffsetMin - margin / 2 | 0;
         }
+        this.offsetBaseTop = 0;
       }
     },
 
