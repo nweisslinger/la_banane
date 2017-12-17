@@ -3,7 +3,7 @@
 @import "sass/utilities/functions";
 
 $labananecolor-1: #FFCD00;
-$labananecolor-2: #0DF4FF;
+$labananecolor-2: #0D49FF;
 
 
 $navbar-height: 5rem;
@@ -27,11 +27,11 @@ $button-border-color: none;
 $title-color: black;
 $subtitle-color: black;
 
-$link: $labananecolor-2;
+$link: black;
 
 $body-background-color:rgb(255, 255, 255);
 
-$footer-background-color:$labananecolor-1;
+$footer-background-color:yellow;
 
 // 6. Import the rest of Bulma
 @import "bulma";
@@ -74,9 +74,19 @@ max-width:10rem;
 }
 
 
-.colored-section h2, .colored-section p, .colored-section h3{
-    color:white;
-}
+// .colored-section h2, .colored-section p, .colored-section h3{
+//     color:rgb(0, 0, 158);
+// }
+
+// #section-performances h2, #section-performances p, #section-performances h3{
+//     color:rgb(156, 0, 91);
+// }
+
+// #section-labanane p, #section-labanane h3{
+//     color:rgb(116, 77, 0);
+// }
+
+
 
 .navbar-burger span{
     background-color: black;
@@ -96,15 +106,39 @@ max-width:10rem;
     color: white;
     background-color: $labananecolor-2;
 }
-.colored-section #cta{
+
+#section-hero #cta{
     color: black;
     background-color: white;
 }
 
-#section-hero #cta{
-    color: white;
-    background-color: $labananecolor-1;
+#section-labanane #cta, #section-about #cta{
+    color: black;
+    background-color: yellow;
 }
+
+#section-pv #cta{
+    color: black;
+    background-color: cyan;
+}
+
+#section-performances #cta{
+    color: white;
+    background-color: #FF94FE;
+}
+
+#section-contact #cta{
+    color: black;
+    background-color: yellow;
+}
+
+#section-full #cta{
+    color: black;
+    background-color: yellow;
+    margin-top:50rem;
+}
+
+
 .bbg{
     background-image: url("../assets/images/bbg.png");
     background-size: cover;
@@ -115,5 +149,28 @@ max-width:10rem;
 }
 
 footer.footer{
-    color:white;
+    color:black;
+}
+
+.instagram{
+    max-width:800px;
+}
+
+
+.title.is-3 span{
+    font-size: 4rem;
+}
+
+.title.is-1 span{
+    font-size: 5rem;
+}
+
+
+
+.fa-fighter-jet{
+    margin-right: 8px;
+}
+
+.footer{
+    padding-bottom: 48px;
 }
